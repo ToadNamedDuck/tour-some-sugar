@@ -42,25 +42,37 @@ const database = {
             id: 0,
             bandId: 2,
             venueId: 1,
-            bookingTime: 1430676293
+            bookingTime: 1430676293141
         },
         {
             id: 1,
             bandId: 0,
             venueId: 0,
-            bookingTime: 1824006984
+            bookingTime: 1824006984958
         },
         {
             id: 2,
             bandId: 0,
             venueId: 1,
-            bookingTime: 1395871803
+            bookingTime: 1395871803481
         },
         {
             id: 3,
             bandId: 1,
             venueId: 0,
-            bookingTime: 1762064844
+            bookingTime: 1762064844287
         }
     ]
+}
+
+export const getBands = () => {
+    return database.bands.map(band => ({...band}))
+}
+
+export const getVenues = () => {
+    return database.venues.map(venue => ({...venue}))
+}
+
+export const getBookings = () => {
+    return database.bookings.map(booking => ({...booking}))
 }
