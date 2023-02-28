@@ -1,0 +1,30 @@
+#DivBandAndVenue{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    
+}
+#DivBand{
+    border: solid green 2px;
+    width: 48%;
+}
+#DivVenue{
+    border: solid purple 2px;
+    width: 48%;
+}
+#DivBookings{
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    border: solid black 2px;
+    margin-bottom: 2em;
+    background-color: beige;
+}
+#DivBookings > h2{
+    color: green;
+}
+#BookingsList{
+    border-left: solid gold 2px;
+    padding-left: .25em;
+    margin-left: .5em;
+}
